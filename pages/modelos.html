@@ -7,12 +7,15 @@
     <title>El Crisol | Modelos</title>
     <!-------CSS------>
     <link rel="stylesheet" href="../css/estilos.css" class="css">
+    <!-----ANIMACIONES----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-------FAVICON------->
-    <link href="./images/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>El Crisol</h1>
+        <h1 class="animate__animated animate__pulse"><a href="../index.html">El Crisol</a></h1>
         <ol>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../pages/modelos.html">Modelos</a></li>
@@ -27,33 +30,35 @@
                 <p>Aquí encontrarán ejemplos de modelos que he realizado</p>
             </div>
             <div class="modelos-fotos">
-                <div class="1">
+                <div class="m1">
                     <img src="../images/1.jpeg" alt="modelo-impulsor-abierto">
                     <p>Modelo de impulsor abierto en aluminio</p>
                 </div>
-                <div class="2">
+                <div class="m2">
                     <img src="../images/2.jpeg" alt="modelo-bomba-caracol">
                     <p>Modelo de bomba caracol en madera</p>
                     <img src="../images/3.jpeg" alt="modelo-bomba-caracol">
                 </div>
-                <div class="3">
+                <div class="m3">
                     <img src="../images/4.jpeg" alt="modelo-impulsor">
                     <p>Modelo de impulsor en aluminio</p>
                     <img src="../images/5.jpeg" alt="modelo-impulsor">
                 </div>
-                <div class="4">
+                <div class="m4">
                     <img src="../images/6.jpeg" alt="modelo-wafflera">
                     <p>Modelo de wafflera realizado en impresora 3D</p>
                     <img src="../images/7.jpeg" alt="modelo-wafflera">
                 </div>
-                <div class="5">
+                <div class="m5">
                     <img src="../images/9.jpeg" alt="modelo-bomba">
                     <p>Modelo de bomba realizado en impresora 3D...</p>
                     <img src="../images/10.jpeg" alt="modelo-bomba">
+                </div>
+                <div class="m6">
                     <p>...con su caja de noyo</p>
                     <img src="../images/8.jpeg" alt="modelo-caja-noyo">
                 </div>
-                <div class="6">
+                <div class="m7">
                     <img src="../images/11.jpeg" alt="modelo-bomba-caracol">
                     <p>Otro ejemplo de un modelo de bomba caracol en madera</p>
                     <img src="../images/12.jpeg" alt="modelo-bomba-caracol">
@@ -61,20 +66,24 @@
             </div>
         </section>
     </main>
+    <div class="fixed">
+        <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" target="_blank"><img src="../images/whatsapp1.png" alt="logo-whatsapp"></a>
+    </div>
     <footer>
         <div class="contacto-footer">
             <h4>Contacto</h4>
             <div>
-                <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" title="WhatsApp" target="_blank"><img src="./images/whatsapp.png" alt="logo-whatsapp"></a>
+                <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" title="WhatsApp" target="_blank"><img src="../images/whatsapp.png" alt="logo-whatsapp"></a>
                 <p>1132445693</p>
             </div>
             <div>
-                <img src="./images/gmail.png" alt="logo-gmail">
+                <img src="../images/gmail.png" alt="logo-gmail">
                 <p>hectorazimonti@gmail.com</p>
             </div>
         </div>
         <div class="direccion-footer">
             <h4>Ubicación</h4>
+            <img src="../images/mapa.png" alt="persona-ubicacion">
             <p>El Crisol</p>
             <address>Calle 18A n° 5072 - Berazategui</address>
         </div>
@@ -83,5 +92,10 @@
             <p><a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp y Gmail iconos creados por Freepik - Flaticon</a></p>
         </div>
     </footer>
+    <!-----ANIMACIONES----->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

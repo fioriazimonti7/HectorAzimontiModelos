@@ -7,15 +7,16 @@
     <title>El Crisol | Modelos</title>
     <!--------CSS------->
     <link rel="stylesheet" href="./css/estilos.css" class="css">
-    <!-------FAVICON------->
-    <link href="./images/favicon.ico" rel="icon" type="image/x-icon">
     <!-----ANIMACIONES----->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-------FAVICON------->
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon">
 </head>
 <body>
     <header>
         <div>
-            <h1>El Crisol</h1>
+            <h1 class="animate__animated animate__pulse"><a href="./index.html">El Crisol</a></h1>
         </div>
         <div>
             <ol>
@@ -30,14 +31,14 @@
         <section class="hero">
             <h2>MODELOS PARA FUNDICIÓN Y LA INDUSTRIA DEL VIDRIO</h2>
             <h3>30 años de experiencia en el rubro</h3>
-            <a href="./pages/servicios.html"><input type="button" value="Echá un vistazo"></a>
+            <a href="./pages/modelos.html"><input type="button" value="Echá un vistazo"></a>
         </section>
         <section class="bienvenidos">
-            <div>
+            <div data-aos="fade-right">
                 <h2>¡Bienvenidos!</h2>
                 <p>Mi nombre es Héctor Azimonti. Poseo un taller dedicado a la construcción de modelos en madera, en aluminio y en impresión 3D para fundición. Además, construyo modelos de moldes y parisones para botellas para la industria del vidrio. Puedo armarlos a partir de planos (los cuales pueden ser provistos a través de AutoCAD o SolidWorks) y de piezas rotas o gastadas.</p>
             </div>
-            <img src="./images/bienvenidos.png" alt="persona-saludando">
+            <img data-aos="fade-left" src="./images/bienvenidos.png" alt="persona-saludando">
         </section>
     </main>
     <div class="fixed">
@@ -57,6 +58,7 @@
         </div>
         <div class="direccion-footer">
             <h4>Ubicación</h4>
+            <img src="./images/mapa.png" alt="persona-ubicacion">
             <p>El Crisol</p>
             <address>Calle 18A n° 5072 - Berazategui</address>
         </div>
@@ -65,5 +67,10 @@
             <p><a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp y Gmail iconos creados por Freepik - Flaticon</a></p>
         </div>
     </footer>
+    <!-----ANIMACIONES----->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

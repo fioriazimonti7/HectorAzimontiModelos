@@ -1,9 +1,8 @@
-main{
-    /*----------INDEX----------*/
+/*----------INDEX----------*/
     .hero{
         @extend %flex;
         flex-direction: column;
-        background: linear-gradient(rgba(13, 13, 14, 0.226), rgba(13, 13, 14, 0.226)), url("../images/hero.jpg");
+        background: linear-gradient(rgba(13, 13, 14, 0.226), rgba(13, 13, 14, 0.226)), url("../images/fondo.jpeg");
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -12,9 +11,11 @@ main{
         height: 90vh;
         h2{
             size: 700px;
+            color: $buff;
         }
         h3{
             size: 600px;
+            color: $desert-sand;
         }
         a{
             input{
@@ -43,21 +44,26 @@ main{
         div{
             margin: 50px;
             width: 50%;
+            border: 2px solid black;
             h2{
-            text-align: center;
+                text-align: center;
+                margin: 15px 15px 0px 15px;
+                background-color: $sage;
             }
             p{
                 text-align: center;
-                margin-top: 10px;
+                padding: 10px 15px 15px 15px;
             }
         }
         img{
             height: 250px;
         }
     }
-    /*----------MODELOS-----------*/
+
+/*----------MODELOS-----------*/
     .modelos{
         background-color: $linen;
+        padding: 40px;
         .modelos-titulos{
             text-align: center;
             h2{
@@ -67,10 +73,298 @@ main{
                 margin: 5px;
             }
         }
+        .modelos-fotos{
+            .m1{
+                @extend %flex;
+                margin: 50px;
+                img{
+                    height: 300px;
+                    box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    margin: 15px 15px 15px 40px;
+                    border: 2px solid black;
+                    padding: 10px;
+                    background-color: $ash-gray;
+                    box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                }
+            }
+            .m2{
+                @extend %flex;
+                margin: 60px;
+                img{
+                    height: 300px;
+                    transition: 1s;
+                    box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    margin: 10px 60px 10px 60px;
+                    border: 2px solid black;
+                    padding: 10px;
+                    background-color: $ash-gray;
+                    box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                }
+            }
+            .m3{
+                @extend %flex;
+                margin: 60px;
+                img{
+                    height: 300px;
+                    box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    margin: 10px 70px 10px 70px;
+                    border: 2px solid black;
+                    padding: 10px;
+                    background-color: $ash-gray;
+                    box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                }
+            }
+            .m4{
+                @extend %flex;
+                margin: 60px;
+                img{
+                    height: 300px;
+                    transition: 1s;
+                    box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    margin: 10px 40px 10px 40px;
+                    border: 2px solid black;
+                    padding: 10px;
+                    background-color: $ash-gray;
+                    box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                }
+            }
+            .m5{
+                @extend %flex;
+                margin: 60px;
+                img{
+                    height: 300px;
+                    box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    margin: 10px 70px 10px 70px;
+                    border: 2px solid black;
+                    padding: 10px;
+                    background-color: $ash-gray;
+                    box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                }
+            }
+            .m6{
+                @extend %flex;
+                margin: 50px;
+                img{
+                    height: 300px;
+                    box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    margin: 10px 40px 10px 10px;
+                    border: 2px solid black;
+                    padding: 10px;
+                    background-color: $ash-gray;
+                    box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -14px 14px 14px -4px rgba(0,0,0,0.75);
+                }
+            }
+            .m7{
+                @extend %flex;
+                margin: 60px;
+                img{
+                    height: 300px;
+                    transition: 1s;
+                    box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    margin: 10px 40px 10px 40px;
+                    border: 2px solid black;
+                    padding: 10px;
+                    background-color: $ash-gray;
+                    box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+                }
+            }
+        }
     }
 
-    /*----------CLIENTES-----------*/
-
+/*----------CLIENTES-----------*/
+    .clientes{
+        padding: 40px;
+        background-color: $linen;
+        .clientes-titulos{
+            text-align: center;
+            img{
+                height: 200px;
+            }
+        }
+        .item-clientes{
+            margin: 30px;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: $ash-gray;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: -1px 14px 19px 0px rgba(0,0,0,0.75);
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
 
     /*----------CONTACTO-----------*/
-}
+    .formulario-titulo{
+        padding: 30px;
+        background-color: $linen;
+        @extend %flex;
+        flex-direction: column;
+        img{
+            height: 200px;
+        }
+    }
+    .formulario{
+        padding: 20px;
+        background-color: $linen;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        div{
+            iframe{
+                height: 350px;
+                width: 400px;
+            }
+        }
+        form{
+            @extend %flex;
+            flex-direction: column;
+            .nombre{
+                input{
+                    width: 300px;
+                    height: 40px;
+                    margin: 10px;
+                    border-radius: 5px;
+                    background-color: $champagne-pink;
+                    outline-color: $desert-sand;
+                    &:focus{
+                        outline-color: $sage;
+                        background-color: $ash-gray;
+                    }
+                }
+            }
+            .apellido{
+                input{
+                    margin: 10px;
+                    width: 300px;
+                    height: 40px;
+                    border-radius: 5px;
+                    background-color: $champagne-pink;
+                    outline-color: $desert-sand;
+                    &:focus{
+                        outline-color: $sage;
+                        background-color: $ash-gray;
+                    }
+                }
+            }
+            .email{
+                input{
+                    margin: 10px;
+                    width: 300px;
+                    height: 40px;
+                    border-radius: 5px;
+                    background-color: $champagne-pink;
+                    outline-color: $desert-sand;
+                    &:focus{
+                        outline-color: $sage;
+                        background-color: $ash-gray;
+                    }
+                }
+            }
+            div{
+                h3{
+                    text-align: center;
+                    margin: 5px;
+                }
+                textarea{
+                    width: 400px;
+                    height: 150px;
+                    border-radius: 5px;
+                    background-color: $champagne-pink;
+                    &:focus{
+                        outline-color: $sage;
+                        background-color: $ash-gray;
+                    }
+                }
+            }
+            .enviar-limpiar{
+                input{
+                    padding: 5px;
+                    margin: 10px;
+                    border: 2px ridge black;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    background-color: $champagne-pink;
+                    transition: 1s;
+                    &:hover{
+                        background-color: $ash-gray;
+                        transform: scale(1.2);
+                        box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                    }
+                }
+            }
+        }
+    }

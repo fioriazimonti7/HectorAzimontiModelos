@@ -7,12 +7,15 @@
     <title>El Crisol | Modelos</title>
     <!-------CSS------>
     <link rel="stylesheet" href="../css/estilos.css" class="css">
+    <!-----ANIMACIONES----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-------FAVICON------->
-    <link href="./images/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>El Crisol</h1>
+        <h1 class="animate__animated animate__pulse"><a href="../index.html">El Crisol</a></h1>
         <ol>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../pages/modelos.html">Modelos</a></li>
@@ -21,22 +24,57 @@
         </ol>
     </header>
     <main>
-
+        <section class="formulario-titulo">
+                <h2>¿Tenés alguna duda?</h2>
+                <img data-aos="fade-up" data-aos-duration="500" src="../images/contacto.png" alt="imagen-contacto">
+        </section>
+        <section class="formulario">
+            <div>
+                <iframe data-aos="fade-up" data-aos-duration="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1638.8227681721032!2d-58.20391470248358!3d-34.764520920504125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f4d277ba93f%3A0xdf0f08836f04d5d0!2sC.%2018A%205072%2C%20B1880%20BRD%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1678315441265!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form data-aos="fade-up" data-aos-duration="500" action="" method="POST" data-netlify="true" enctype="">
+                <div class="nombre">
+                    <label for="nombre">Nombre/s</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="apellido">
+                    <label for="apellido">Apellido/s</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+                <div class="email">
+                    <label for="e-mail">E-mail</label>
+                    <input type="text" name="e-mail" id="e-mail">
+                </div>
+                <div>
+                    <h3 class="titulo-mensaje">Mensaje</h3>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="captcha" data-netlify-recaptcha="true"></div>
+                <div class="enviar-limpiar">
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+            </form>
+        </section>
     </main>
+    <div class="fixed">
+        <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" target="_blank"><img src="../images/whatsapp1.png" alt="logo-whatsapp"></a>
+    </div>
     <footer>
         <div class="contacto-footer">
             <h4>Contacto</h4>
             <div>
-                <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" title="WhatsApp" target="_blank"><img src="./images/whatsapp.png" alt="logo-whatsapp"></a>
+                <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" title="WhatsApp" target="_blank"><img src="../images/whatsapp.png" alt="logo-whatsapp"></a>
                 <p>1132445693</p>
             </div>
             <div>
-                <img src="./images/gmail.png" alt="logo-gmail">
+                <img src="../images/gmail.png" alt="logo-gmail">
                 <p>hectorazimonti@gmail.com</p>
             </div>
         </div>
         <div class="direccion-footer">
             <h4>Ubicación</h4>
+            <img src="../images/mapa.png" alt="persona-ubicacion">
             <p>El Crisol</p>
             <address>Calle 18A n° 5072 - Berazategui</address>
         </div>
@@ -45,5 +83,10 @@
             <p><a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp y Gmail iconos creados por Freepik - Flaticon</a></p>
         </div>
     </footer>
+    <!-----ANIMACIONES----->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

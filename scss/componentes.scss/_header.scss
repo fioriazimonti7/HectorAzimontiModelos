@@ -9,6 +9,16 @@ header{
     h1{
         margin: 25px;
         color: white;
+        animation-delay: 1s;
+        a{
+            text-decoration: none;
+            color: white;
+            transition: 0.8s;
+            &:hover{
+                color: $buff;
+                text-shadow: $buff 4px 7px;
+            }
+        }
     }
     ol{
         display: flex;

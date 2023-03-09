@@ -32,6 +32,9 @@ footer{
         p{
             margin: 10px;
         }
+        img{
+            height: 64px;
+        }
     }
     .iframe-footer{
         @extend %flex;

@@ -7,12 +7,15 @@
     <title>El Crisol | Modelos</title>
     <!-------CSS------>
     <link rel="stylesheet" href="../css/estilos.css" class="css">
+    <!-----ANIMACIONES----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-------FAVICON------->
-    <link href="./images/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>El Crisol</h1>
+        <h1 class="animate__animated animate__pulse"><a href="../index.html">El Crisol</a></h1>
         <ol>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../pages/modelos.html">Modelos</a></li>
@@ -21,22 +24,56 @@
         </ol>
     </header>
     <main>
-
+        <section class="clientes">
+            <div class="clientes-titulos">
+                <h2>Clientes</h2>
+                <p>Estos son algunos de mis clientes</p>
+                <img src="../images/cliente.png" alt="imagen-cliente">
+            </div>
+            <div class="item-clientes">
+                <p>Acerías Berisso</p>
+            </div>
+            <div class="item-clientes">
+                <p>Hercos</p>
+            </div>
+            <div class="item-clientes">
+                <p>Marzo Pumps</p>
+            </div>
+            <div class="item-clientes">
+                <p>Patracas</p>
+            </div>
+            <div class="item-clientes">
+                <p>Dirosa Hnos.</p>
+            </div>
+            <div class="item-clientes">
+                <p>Rigolleau</p>
+            </div>
+            <div class="item-clientes">
+                <p>Cattorini</p>
+            </div>
+            <div class="item-clientes">
+                <p>Repicky</p>
+            </div>
+        </section>
     </main>
+    <div class="fixed">
+        <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" target="_blank"><img src="../images/whatsapp1.png" alt="logo-whatsapp"></a>
+    </div>
     <footer>
         <div class="contacto-footer">
             <h4>Contacto</h4>
             <div>
-                <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" title="WhatsApp" target="_blank"><img src="./images/whatsapp.png" alt="logo-whatsapp"></a>
+                <a href="https://api.whatsapp.com/send/?phone=1132445693&text&type=phone_number&app_absent=0" title="WhatsApp" target="_blank"><img src="../images/whatsapp.png" alt="logo-whatsapp"></a>
                 <p>1132445693</p>
             </div>
             <div>
-                <img src="./images/gmail.png" alt="logo-gmail">
+                <img src="../images/gmail.png" alt="logo-gmail">
                 <p>hectorazimonti@gmail.com</p>
             </div>
         </div>
         <div class="direccion-footer">
             <h4>Ubicación</h4>
+            <img src="../images/mapa.png" alt="persona-ubicacion">
             <p>El Crisol</p>
             <address>Calle 18A n° 5072 - Berazategui</address>
         </div>
@@ -45,5 +82,10 @@
             <p><a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp y Gmail iconos creados por Freepik - Flaticon</a></p>
         </div>
     </footer>
+    <!-----ANIMACIONES----->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
