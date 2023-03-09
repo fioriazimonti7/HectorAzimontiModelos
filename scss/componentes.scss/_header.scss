@@ -1,0 +1,29 @@
+/*----------HEADER----------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 10vh;
+    h1{
+        margin: 25px;
+        color: white;
+    }
+    ol{
+        display: flex;
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                margin: 35px;
+                color: white;
+                transition: 0.8s;
+                &:hover{
+                    color: $buff;
+                    text-shadow: $buff 2px 4px;
+                }
+            }
+        }
+    }
+}

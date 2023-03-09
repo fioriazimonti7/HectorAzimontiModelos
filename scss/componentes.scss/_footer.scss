@@ -1,0 +1,50 @@
+/*----------FOOTER----------*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    background-color: $isabelline;
+    .contacto-footer{
+        @extend %flex;
+        flex-direction: column;
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            a{
+                margin: 5px;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        div{
+            img{
+                margin: 5px;
+            }
+        }
+    }
+    .direccion-footer{
+        @extend %flex;
+        flex-direction: column;
+        p{
+            margin: 10px;
+        }
+    }
+    .iframe-footer{
+        @extend %flex;
+        flex-direction: column;
+        iframe{
+            height: 250px;
+        }
+        p{
+            margin: 10px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

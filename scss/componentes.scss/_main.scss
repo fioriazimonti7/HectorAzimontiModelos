@@ -1,0 +1,76 @@
+main{
+    /*----------INDEX----------*/
+    .hero{
+        @extend %flex;
+        flex-direction: column;
+        background: linear-gradient(rgba(13, 13, 14, 0.226), rgba(13, 13, 14, 0.226)), url("../images/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 90vh;
+        h2{
+            size: 700px;
+        }
+        h3{
+            size: 600px;
+        }
+        a{
+            input{
+                padding: 5px;
+                margin: 15px;
+                border: 2px ridge black;
+                border-radius: 5px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                background-color: $champagne-pink;
+                transition: 1s;
+                &:hover{
+                background-color: $ash-gray;
+                transform: scale(1.2);
+                box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                -moz-box-shadow: 12px 12px 14px -4px rgba(0,0,0,0.75);
+                }
+            }
+        }
+    }
+    .bienvenidos{
+        background-color: $linen;
+        padding: 50px;
+        @extend %flex;
+        div{
+            margin: 50px;
+            width: 50%;
+            h2{
+            text-align: center;
+            }
+            p{
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+        img{
+            height: 250px;
+        }
+    }
+    /*----------MODELOS-----------*/
+    .modelos{
+        background-color: $linen;
+        .modelos-titulos{
+            text-align: center;
+            h2{
+                margin: 5px;
+            }
+            p{
+                margin: 5px;
+            }
+        }
+    }
+
+    /*----------CLIENTES-----------*/
+
+
+    /*----------CONTACTO-----------*/
+}
