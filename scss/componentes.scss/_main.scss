@@ -168,6 +168,7 @@
             }
             .m5{
                 @extend %flex;
+                flex-direction: row;
                 margin: 60px;
                 img{
                     height: 300px;
